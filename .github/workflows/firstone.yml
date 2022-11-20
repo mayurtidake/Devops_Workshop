@@ -12,7 +12,7 @@ jobs:
    strategy:
     matrix:
      version: [10,12,14]
-     os: [ubntu-latest,windows-latest,macOS-latest]
+     os: [ubuntu-latest,windows-latest,macOS-latest]
    runs-on: ${{matrix.os}}
    steps:
     - run: echo $JOB1_VARIABLE
@@ -22,7 +22,7 @@ jobs:
    strategy:
     matrix:
      version: [10,12,14]
-     os: [ubntu-latest,windows-latest,macOS-latest]
+     os: [ubuntu-latest,windows-latest,macOS-latest]
    runs-on: ${{matrix.os}}
    steps:
     - run: ./server.sh
@@ -31,7 +31,7 @@ jobs:
    strategy:
     matrix:
      version: [10,12,14]
-     os: [ubntu-latest,windows-latest,macOS-latest]
+     os: [ubuntu-latest,windows-latest,macOS-latest]
    runs-on: ${{matrix.os}}
    steps:
     - run: echo "JOB3 RUNS IF JOB2 IS SUCCESSFUL"
@@ -41,7 +41,7 @@ jobs:
    strategy:
     matrix:
      version: [10,12,14]
-     os: [ubntu-latest,windows-latest,macOS-latest]
+     os: [ubuntu-latest,windows-latest,macOS-latest]
    runs-on: ${{matrix.os}}
    steps:
    - run: echo "JOB4 RUNS EVEN AFTER JOB2 FAILS"
